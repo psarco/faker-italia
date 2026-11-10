@@ -23,7 +23,7 @@ Se la tua applicazione valida questi campi (e dovrebbe), le factory e i seeder c
 ## Installazione
 
 ```bash
-composer require --dev generatore-dati/faker-italia
+composer require --dev psarco/faker-italia
 ```
 
 Requisiti: PHP 8.1+, `fakerphp/faker` 1.20+.
@@ -129,7 +129,7 @@ Italian test data for [Faker](https://fakerphp.org) that **passes real validatio
 Faker's built-in `it_IT` provider returns random tax codes (about 1% are valid) and Italian IBANs with a random CIN (about 4% valid). If your app validates these fields, factories and seeders fail randomly. This package fixes that.
 
 ```bash
-composer require --dev generatore-dati/faker-italia
+composer require --dev psarco/faker-italia
 ```
 
 ```php
