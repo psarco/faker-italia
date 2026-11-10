@@ -1,0 +1,52 @@
+{
+    "name": "generatore-dati/faker-italia",
+    "description": "Faker provider and validators for Italian data: codice fiscale, partita IVA and IBAN that pass real validation. Laravel rules included.",
+    "keywords": ["faker", "italia", "italy", "codice fiscale", "partita iva", "iban", "validation", "laravel", "test data", "fake data", "codice catastale"],
+    "homepage": "https://generatore-dati.it",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "generatore-dati.it",
+            "homepage": "https://generatore-dati.it"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "fakerphp/faker": "^1.20"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5 || ^11.0",
+        "illuminate/contracts": "^10.0 || ^11.0 || ^12.0 || ^13.0",
+        "illuminate/support": "^10.0 || ^11.0 || ^12.0 || ^13.0"
+    },
+    "suggest": {
+        "ext-intl": "Better handling of accented names when calculating the codice fiscale",
+        "illuminate/contracts": "To use the Laravel validation rules"
+    },
+    "autoload": {
+        "psr-4": {
+            "GeneratoreDati\\FakerItalia\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GeneratoreDati\\FakerItalia\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GeneratoreDati\\FakerItalia\\Laravel\\FakerItaliaServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
